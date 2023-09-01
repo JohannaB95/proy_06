@@ -10,7 +10,9 @@ const main = async ( ) => {
 
     /*Se solicita imprimir en la consola el mensaje que esta entre paréntesis, que añada una línea de espacio
     y que el texto sea de color rojo*/
-    console.log('hola SENA CBA\n'.red);
+    console.log(`*****************`.cyan);
+    console.log(`* `.cyan + 'hola SENA CBA'.red + ` *`.cyan);
+    console.log(`*****************\n`.cyan);
 
      //Se declara una variable constante llamada numeros a la que se le asigna un arreglo de numeros
     const numeros = [1, 2, 800, 912, 1000, 1283, 2811];
@@ -29,8 +31,10 @@ const main = async ( ) => {
 
      /*Se solicita imprimir en la consola el resultado de invertir un número como número y como cadena,
     y que el texto dado como resultado sea de color azul.*/
-        console.log("El número '%s' es '%s' invertido como número, y '%s' como cadena".blue, numero,
-        invertidoComoNumero, invertidoComoCadena);
+        console.log(`****************************************************************************`.magenta);
+        console.log(`*  `.magenta + `El número '%s' es '%s' invertido como número, y '%s' como cadena`.cyan 
+        + `  *`.magenta, numero, invertidoComoNumero, invertidoComoCadena);
+        console.log(`****************************************************************************\n`.magenta);
     }
 
     // Se declara una variable constante llamada textos, a la cual se la ha asignado un arreglo de strings.
@@ -46,7 +50,9 @@ const main = async ( ) => {
     
     /*Se solicita imprimir en la consola el resultado de invertir el texto dado y que el texto resultado
      sea de color rojo.*/
-        console.log("El texto '%s' se invierte como '%s' ".red, texto, textoInvertido);
+        console.log(`****************************************************************************************************`.yellow);
+        console.log(`*`.yellow +`El texto '%s' se invierte como '%s' `.red + `*`.yellow, texto, textoInvertido);
+        console.log(`****************************************************************************************************\n`.yellow);
     }
 
     /*Se declara una variable constante llamada datos, a la cual se le ha asignado un arreglo con tres elementos
@@ -63,7 +69,9 @@ const main = async ( ) => {
 
          /*Se solicita imprimir en la consola el resultado de la conversión del dato dado y que el texto resultado
      sea de color amarillo.*/
-        console.log(`El resultado de conversión es : ${datoConvertido}`.yellow);
+        console.log(`**************************************************`.red);
+        console.log(`*  `.red +`El resultado de conversión es : ${datoConvertido}`.yellow + `  *`.red);
+        console.log(`**************************************************\n`.red);
 
     }
 }

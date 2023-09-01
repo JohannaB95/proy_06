@@ -85,7 +85,7 @@ const conversionDatos = data => {
 ser igual a un espacio, null, undefined o su longitud es igual a 0 se obtendrá un mensaje que dice 'El 
 valor ingresado está vacio o incorrecto' */
     if (data === ' ' || data === null || data === undefined || data.lenght === 0){
-        dataVar = 'El valor ingresado está vacio o incorrecto';
+        dataVar = `El valor ingresado está vacio o incorrecto`;
     
     /* Se declara que si la condición anterior no se cumple, se procedera a evaluar diferentes opciones 
     (switch), que en el caso (case) de cumplir con el tipo de dato que se esta especificando se imprimara
@@ -94,7 +94,9 @@ valor ingresado está vacio o incorrecto' */
     al final ninguna de las condiciones se cumple el valor de dataVar será (default), mostrará un mensaje 
     que diga que ' El valor ingresado no se puede invertir' */
     }else {
-        console.log(`El valor ingresado es de tipo: ${dataType}, con un valor de: ${data} `.green);
+        console.log(`****************************************************************************`.blue);
+        console.log(`*   `.blue +`El valor ingresado es de tipo: ${dataType}, con un valor de: ${data} `.green + `  *`.blue);
+        console.log(`****************************************************************************\n`.blue);
         switch (dataType){
             case 'number':
                 dataVar = invertirNumero(data);
@@ -106,7 +108,7 @@ valor ingresado está vacio o incorrecto' */
                 dataVar = invertirArreglo(data);
                 break;
             default:
-                dataVar = ' El valor ingresado no se puede invertir';
+                dataVar = `El valor ingresado no se puede invertir`;
         }
     }
     /* Se solicita que se devuelva el valor de dataVar*/
