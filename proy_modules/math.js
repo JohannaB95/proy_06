@@ -96,13 +96,13 @@ valor ingresado está vacio o incorrecto' */
         console.log(`*   `.blue + `El valor ingresado es de tipo: ${dataType}, con un valor de: ${data}`  + `   *`.blue);
         console.log(`****************************************************************************\n`.blue);
         switch(dataType){
-            case 'number':
+            case 'number' :
                 dataVar = invertirNumero(data);
                 break;
-            case 'string':
+            case 'string' :
                  dataVar = invertirTexto(data);
                 break;
-            case 'object':
+            case 'object' :
                 dataVar = invertirArreglo(data);
                 break;
             default:

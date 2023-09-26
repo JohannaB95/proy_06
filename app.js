@@ -51,7 +51,7 @@ const main = async () => {
     /*Se solicita imprimir en la consola el resultado de invertir el texto dado y que el texto resultado
      sea de color rojo.*/
         console.log(`****************************************************************************************************`.yellow);
-        console.log(`*  `.yellow + "El texto %s se invierte como '%s'" + ` *`.yellow, texto, textoInvertido);
+        console.log(`* `.yellow + "El texto '%s' se invierte como '%s'" + `*`.yellow, texto, textoInvertido);
         console.log(`****************************************************************************************************\n`.yellow);
     }
 
@@ -70,7 +70,7 @@ const main = async () => {
          /*Se solicita imprimir en la consola el resultado de la conversión del dato dado y que el texto resultado
      sea de color amarillo.*/
         console.log(`**************************************************`.red);
-        console.log(`*  `.red + `El resultado de conversión es : ${datoConvertido}`  + `  *`.red);
+        console.log(`*  `.red + `El resultado de conversión es : ${datoConvertido}` + `  *`.red);
         console.log(`**************************************************\n`.red);
 
     }
