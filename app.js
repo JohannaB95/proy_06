@@ -1,15 +1,15 @@
 //Se declara require para importar colors, desde la carpeta node_modules.
-require('colors');
+require ('colors');
 
 /*se declara una función const de nombre math para que importe de la carpeta proy_module las funciones.
 y operaciones que se ejecutaran*/
 const math = require('./proy_modules/math.js')
 
 // Se declara una función flecha const main, que es asincrónica
-const main = async ( ) => {
+const main = async () => {
 
     /*Se solicita imprimir en la consola el mensaje que esta entre paréntesis, que añada una línea de espacio
-    y que el texto sea de color rojo*/
+    y que el texto sea de color rojo y se añade diseño a la interfaz*/
     console.log(`*****************`.cyan);
     console.log(`* `.cyan + 'hola SENA CBA'.red + ` *`.cyan);
     console.log(`*****************\n`.cyan);
@@ -19,7 +19,7 @@ const main = async ( ) => {
 
      /* Se utiliza for para crear un bucle que se ejecute con todos los argumentos dados en la constante 
     numeros, cada vez que este realice la iteración el valor se asigna en numero.*/
-    for (const numero of numeros) {
+    for (const numero of numeros){
 
     /* Se declara una variable constante llamada invertidoComoNumero que estara exportando del módulo
     math los parámetros requeridos.*/
@@ -30,10 +30,10 @@ const main = async ( ) => {
         const invertidoComoCadena = math.invertirNumeroComoCadena(numero);
 
      /*Se solicita imprimir en la consola el resultado de invertir un número como número y como cadena,
-    y que el texto dado como resultado sea de color azul.*/
+    y que el texto dado como resultado sea de color azul y se le añade diseño a la interfaz*/
         console.log(`****************************************************************************`.magenta);
-        console.log(`*  `.magenta + `El número '%s' es '%s' invertido como número, y '%s' como cadena`.cyan 
-        + `  *`.magenta, numero, invertidoComoNumero, invertidoComoCadena);
+        console.log(`*  `.magenta + "El número '%s' es '%s' invertido como número, y '%s' como cadena" + `  *`.magenta,
+        numero, invertidoComoNumero, invertidoComoCadena );
         console.log(`****************************************************************************\n`.magenta);
     }
 
@@ -42,7 +42,7 @@ const main = async ( ) => {
 
      /* Se utiliza for para crear un bucle que se ejecute con todos los argumentos dados en la constante 
     textos, cada vez que este realice la iteración el valor se asigna en texto.*/
-    for(const texto of textos) {
+    for(const texto of textos){
 
     /* Se declara una variable constante llamada textoInvertido que estara exportando del módulo
     math los parámetros requeridos.*/
@@ -51,17 +51,17 @@ const main = async ( ) => {
     /*Se solicita imprimir en la consola el resultado de invertir el texto dado y que el texto resultado
      sea de color rojo.*/
         console.log(`****************************************************************************************************`.yellow);
-        console.log(`*`.yellow +`El texto '%s' se invierte como '%s' `.red + `*`.yellow, texto, textoInvertido);
+        console.log(`*  `.yellow + "El texto %s se invierte como '%s'" + ` *`.yellow, texto, textoInvertido);
         console.log(`****************************************************************************************************\n`.yellow);
     }
 
     /*Se declara una variable constante llamada datos, a la cual se le ha asignado un arreglo con tres elementos
     que son un number, un string y otro arreglo */
-    const datos = [1234567, 'ADSO 2798618', [2798618, 'ADSO'] ]
+        const datos = [1234567, 'ADSO 2798618', [2798618, 'ADSO']]
 
     /* Se utiliza for para crear un bucle que se ejecute con todos los argumentos dados en la variable let 
     datos, cada vez que este realice la iteración el valor se asigna en dato.*/
-    for (let dato of datos) {
+    for(let dato of datos){
 
           /* Se declara una variable constante llamada datoInvertido que estara exportando del módulo
     math los parámetros requeridos.*/
@@ -70,11 +70,11 @@ const main = async ( ) => {
          /*Se solicita imprimir en la consola el resultado de la conversión del dato dado y que el texto resultado
      sea de color amarillo.*/
         console.log(`**************************************************`.red);
-        console.log(`*  `.red +`El resultado de conversión es : ${datoConvertido}`.yellow + `  *`.red);
+        console.log(`*  `.red + `El resultado de conversión es : ${datoConvertido}`  + `  *`.red);
         console.log(`**************************************************\n`.red);
 
     }
 }
 
-//
+//Se invoca la función main
 main( );
